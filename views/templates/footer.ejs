@@ -1,0 +1,33 @@
+</div>
+</body>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $("#file-upload").change(function () {
+    var length = 40;
+    var smallerString = this.files[0].name.substring(0, length);
+    if (this.files[0].name.length > 40) {
+      smallerString = smallerString + "....";
+    }
+    $("#file-name").text(smallerString);
+    document
+      .getElementById("selected-file-icon")
+      .classList.remove("fa-file-circle-xmark");
+    document
+      .getElementById("selected-file-icon")
+      .classList.add("fa-file-circle-check");
+    var fileSize;
+    if (this.files[0].size > 1000000) {
+      fileSize = Math.round(this.files[0].size / 1000000) + " MB";
+    } else {
+      fileSize = Math.round(this.files[0].size / 1000) + " KB";
+    }
+    $("#file-size").text(fileSize);
+  });
+</script>
+<script src="/scripts/main.js"></script>
+</html>

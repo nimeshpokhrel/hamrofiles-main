@@ -1,0 +1,72 @@
+<%- include("./templates/header") -%>
+<div class="col-12 col-md-6 px-0 px-md-4">
+  <div
+    class="d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div
+      class="mx-0"
+      style="
+        border-radius: 5px;
+        box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+        background-color: rgb(254, 254, 254);
+        height: auto;
+        width: 475px;
+      "
+    >
+      <form class="m-4 mb-0" method="post">
+        <div
+          class="ps-3 selected-file-wrapper d-flex justify-content-start align-items-center"
+        >
+          <i class="fa-solid fa-file-circle-check file-icon"></i>
+          <div
+            class="d-flex flex-column ps-2 me-2"
+            style="font-size: 14px; overflow: hidden"
+          >
+            <label id="file-name"><%= locals.originalName %></label>
+            <label id="file-size" style="font-weight: 600"
+              ><%= locals.fileSize %></label
+            >
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between mt-4">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="flex-grow-1 password-input me-1 <%= locals.addedClass %>"
+            placeholder="Password"
+          />
+          <br />
+          <i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -30px; cursor: pointer; margin-right: 18px"
+          ></i>
+          <button type="submit" class="button-primary">DOWNLOAD</button>
+        </div>
+      </form>
+      <% if (locals.errorMessage != null) { %>
+        <p
+        class="mx-4 d-flex align-items-center justify-content-start my-2 mb-3"
+        style="margin-bottom: 0; font-size: 11px; position: absolute; color: red;"
+      >
+        Incorrect Passoword
+    </p>
+        <% } %>
+      <p
+        class="mx-4 d-flex align-items-center justify-content-end my-2 mb-3"
+        style="margin-bottom: 0; font-size: 11px"
+      >
+        <%= locals.downloadCount %> download/s
+      </p>
+      <p
+        class="mx-4 d-flex align-items-center justify-content-center my-2 mb-3"
+        style="margin-bottom: 0; font-size: 11px"
+      >
+        The shared file expires after 7 days or after 10 downloads.
+      </p>
+    </div>
+  </div>
+</div>
+<%- include("./templates/footer") -%>

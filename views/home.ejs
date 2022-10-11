@@ -1,0 +1,95 @@
+<%- include("./templates/header") -%>
+<div class="col-12 col-md-6 px-0 px-md-4">
+  <div class="d-flex align-items-center justify-content-center vh-100">
+    <div
+      class="mx-0 main-form-box"
+      style="
+        border-radius: 5px;
+        background-color: rgb(254, 254, 254);
+        box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+        height: auto;
+        width: 475px;
+      "
+    >
+      <form
+        class="m-4"
+        enctype="multipart/form-data"
+        action="/share"
+        method="post"
+      >
+        <label
+          for="file-upload"
+          class="wrapper d-flex flex-column p-3 justify-content-center align-items-center"
+          style="color: #4154f1; font-weight: 600"
+          ><i class="fas fa-cloud-upload-alt upload-icon mb-3"></i>SELECT A FILE
+          TO SHARE</label
+        >
+        <input type="file" name="file" id="file-upload" hidden required />
+        <br />
+        <div
+          class="ps-3 selected-file-wrapper d-flex justify-content-start align-items-center"
+        >
+          <i
+            class="fa-solid fa-file-circle-xmark file-icon"
+            id="selected-file-icon"
+          ></i>
+          <div
+            class="d-flex flex-column ps-2 me-2"
+            style="font-size: 14px; overflow: hidden"
+          >
+            <label id="file-name" class="text-truncate">No File Selected</label>
+            <label id="file-size" style="font-weight: 600"></label>
+          </div>
+        </div>
+        <p class="mt-2 ms-1" style="margin-bottom: 0; font-size: 11px">
+          Note: The maximum upload limit for non-registered users is
+          <strong>20 MB</strong>.
+        </p>
+        <div class="d-flex align-items-center justify-content-between mt-4">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="flex-grow-1 password-input me-1"
+            placeholder="Password (optional)"
+          />
+          <br />
+          <i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -30px; cursor: pointer; margin-right: 18px"
+          ></i>
+          <button type="submit" class="button-primary">SHARE NOW</button>
+        </div>
+      </form>
+      <% if (locals.fileLink != null) { %>
+      <p
+        class="mx-4 d-flex align-items-center justify-content-center"
+        style="margin-top: 32px; margin-bottom: 0; font-size: 14px"
+      >
+        Your file has been shared at:
+      </p>
+      <div
+        class="copy-link m-4 mt-2 mb-0 d-flex align-items-center justify-content-center"
+      >
+        <input
+          type="text"
+          value="<%= locals.fileLink %>"
+          class="link-field flex-fill"
+          readonly
+        />
+        <button type="button" class="link-copy-btn px-3">
+          <i class="fa-regular fa-clipboard"></i>
+        </button>
+      </div>
+      <p
+        class="mx-4 d-flex align-items-center justify-content-center my-2 mb-3"
+        style="margin-bottom: 0; font-size: 11px"
+      >
+        Your shared file expires after 7 days or after 10 downloads.
+      </p>
+      <% } %>
+    </div>
+  </div>
+</div>
+<%- include("./templates/footer") -%>

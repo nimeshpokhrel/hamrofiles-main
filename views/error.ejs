@@ -1,0 +1,37 @@
+<%- include("./templates/header") -%>
+<div class="col-12 col-md-6 px-0 px-md-4">
+  <div
+    class="d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div
+      class="mx-0"
+      style="
+        border-radius: 5px;
+        box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+        background-color: rgb(254, 254, 254);
+        height: auto;
+        width: 475px;
+      "
+    >
+      <div
+        class="m-4 d-flex justify-content-center align-items-center flex-column"
+      >
+        <i class="fa-solid fa-bug upload-icon mb-3"></i>
+        <span class="mb-3" style="font-weight: 600; color: #4154f1"
+          >OOPS! SOMETHING WENT WRONG</span
+        >
+        <span class="mb-3" style="font-size: 15px; text-align: center"
+          >So Sorry, but the requested content is not available for use or some
+          kind of server side error has occured. Please bear with us till we fix
+          the issue and be back soon.</span
+        >
+        <span class="mb-3" style="text-align: center; font-size: 15px;"><%= locals.errorMessage %></span>
+        <a href="/">
+          <button type="button" class="button-primary">RETURN BACK</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include("./templates/footer") -%>

@@ -1,0 +1,122 @@
+.wrapper {
+  height: 167px;
+  border-radius: 5px;
+  border: 2px dashed #4154f1;
+}
+
+.upload-icon {
+  font-size: 40px;
+  color: #4154f1;
+}
+
+.file-icon {
+  font-size: 22px;
+  color: #4154f1;
+}
+
+.selected-file-wrapper {
+  height: 60px;
+  border-radius: 5px;
+  background-color: hsla(234, 86%, 60%, 0.098);
+}
+
+.button-primary {
+  border: none;
+  outline: none;
+  padding: 9.5px 20px;
+  border-radius: 5px;
+  background-color: #4154f1;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.button-primary:hover {
+  background-color: #6875ea;
+}
+
+.password-input {
+  border: none;
+  outline: none;
+  background-color: rgb(246, 246, 246);
+  padding: 8px 14px;
+  border-radius: 5px;
+  outline: 1.5px solid #353535;
+  font-size: 14px;
+}
+
+.link-field {
+  border: none;
+  outline: none;
+  background-color: rgb(239, 239, 239);
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 37px;
+  margin-right: 25px;
+}
+
+.link-copy-btn {
+  height: 37px;
+  margin-left: -30px;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #4154f1;
+  color: white;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  background-size: cover;
+  background: url(/img/hero-bg.png) top center no-repeat;
+}
+
+.navbar-nav a {
+  text-decoration: none !important;
+  color: #353535 !important;
+  font-weight: 600 !important;
+  font-size: 14.5px !important;
+}
+
+.navbar-nav a:hover {
+  color: #4154f1 !important;
+}
+
+.nav-link {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+}
+
+/* .nav-dropshadow {
+  background-color: rgb(254, 254, 254);
+  box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+} */
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.incorrect-password {
+  outline: 1.5px solid red !important;
+  background-color: hwb(0 0% 0% / 0.098) !important; 
+}
+
+input,
+input::placeholder {
+  font-size: 13px !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
