@@ -101,6 +101,11 @@
   box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
 } */
 
+.btn-close:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .navbar-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -122,4 +127,8 @@ input::placeholder {
 
 body {
   background-color: #f9fafe !important;
+}
+
+.offcanvas-start {
+  width: 300px !important;
 }
