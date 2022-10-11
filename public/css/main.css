@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 
 .wrapper {
   height: 167px;
@@ -76,6 +76,10 @@
   background: url(/img/hero-bg.png) top center no-repeat;
 }
 
+.navbar {
+  height: 79.5px !important;
+}
+
 .navbar-nav a {
   text-decoration: none !important;
   color: #353535 !important;
@@ -93,8 +97,8 @@
 }
 
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   scroll-behavior: smooth;
 }
 
@@ -115,7 +119,7 @@
 
 .incorrect-password {
   outline: 1.5px solid red !important;
-  background-color: hwb(0 0% 0% / 0.098) !important; 
+  background-color: hwb(0 0% 0% / 0.098) !important;
 }
 
 input,
@@ -128,7 +132,7 @@ input::placeholder {
 }
 
 body {
-  font-family: 'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
   background-color: #f9fafe !important;
 }
 
@@ -138,4 +142,16 @@ body {
 
 .overflow-wrapper {
   overflow-x: hidden !important;
+}
+
+.offer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 79.5px;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  background-color: #4154f1;
+  color: white;
 }
