@@ -18,99 +18,100 @@
     <title>Home | HamroFiles</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-light navbar-expand-lg fixed-top"
-      id="navbar"
-      style="
-        background-color: rgb(254, 254, 254);
-        box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
-      "
-    >
-      <div class="container-fluid ms-4 p-2 py-1 me-3">
-        <a class="navbar-brand" href="/"
-          ><img src="/img/logo.png" alt="logo" style="width: 200px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas"
-          aria-controls="offcanvas"
-          aria-label="Toggle navigation"
-          style="border: none !important"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav align-items-center">
-            <a class="nav-link" href="#">FEATURES</a>
-            <a class="nav-link" href="#">PRICING</a>
-            <a class="nav-link" href="#">ABOUT US</a>
-            <a class="nav-link" href="#">CONTACT US</a>
-            <a class="nav-link" href="#"
-              ><button
-                type="button"
-                class="button-primary"
-                style="padding: 10px 16px"
+    <div class="overflow-wrapper">
+      <nav
+        class="navbar navbar-light navbar-expand-lg fixed-top"
+        id="navbar"
+        style="
+          background-color: rgb(254, 254, 254);
+          box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+        "
+      >
+        <div class="container-fluid ms-4 p-2 py-1 me-3">
+          <a class="navbar-brand" href="/"
+            ><img src="/img/logo.png" alt="logo" style="width: 200px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas"
+            aria-controls="offcanvas"
+            aria-label="Toggle navigation"
+            style="border: none !important"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav align-items-center">
+              <a class="nav-link" href="#">FEATURES</a>
+              <a class="nav-link" href="#">PRICING</a>
+              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="#"
+                ><button
+                  type="button"
+                  class="button-primary"
+                  style="padding: 10px 16px"
+                >
+                  <i class="fa-solid fa-user me-2"></i>MY ACCOUNT
+                </button></a
               >
-                <i class="fa-solid fa-user me-2"></i>MY ACCOUNT
-              </button></a
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel"><a class="navbar-brand" href="/"
+            ><img src="/img/logo.png" alt="logo" style="width: 200px"
+          /></a></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-0 d-flex flex-column justify-content-between">
+          <div class="navbar-nav align-items-start">
+            <a class="nav-link mb-3 mt-2" href="#">FEATURES</a>
+            <a class="nav-link" href="#"style="margin-bottom: 16px;">PRICING</a>
+            <a class="nav-link" href="#"style="margin-bottom: 16px;">ABOUT US</a>
+            <a class="nav-link" href="#"style="margin-bottom: 16px;">CONTACT US</a>
+          </div>
+          <div class="navbar-nav justify-content-center align-items-center flex-grow">
+            <a class="nav-link" href="#"
+            ><button
+              type="button"
+              class="button-primary"
+              style="padding: 10px 55px"
             >
+              <i class="fa-solid fa-user me-2"></i>MY ACCOUNT
+            </button></a
+          >
           </div>
         </div>
       </div>
-    </nav>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel"><a class="navbar-brand" href="/"
-          ><img src="/img/logo.png" alt="logo" style="width: 200px"
-        /></a></h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body pt-0 d-flex flex-column justify-content-between">
-        <div class="navbar-nav align-items-start">
-          <a class="nav-link mb-3 mt-2" href="#">FEATURES</a>
-          <a class="nav-link" href="#"style="margin-bottom: 16px;">PRICING</a>
-          <a class="nav-link" href="#"style="margin-bottom: 16px;">ABOUT US</a>
-          <a class="nav-link" href="#"style="margin-bottom: 16px;">CONTACT US</a>
+      <div class="hero-area row d-flex justify-content-center align-items-center vh-100" style="overflow-x: hidden">
+        <div class="col-6 d-none d-md-block ps-5">
+          <div
+            class="ps-5 d-flex flex-column align-items-start justify-content-center"
+          >
+            <span style="font-size: 32px; font-weight: 500"
+              ><span style="color: #4154f1; font-weight: 700">Making </span>File
+              Sharing Easy & Reliable</span
+            >
+            <span class="mt-3" style="font-size: 18px; font-weight: 400"
+              >Easy to use, reliable, private, and secure. It’s no wonder
+              <span style="color: #4154f1; font-weight: 600">hamrofiles</span> is
+              the choice for sharing your most important files quickly and
+              reliably.</span
+            >
+            <button
+              type="button"
+              class="button-primary mt-4"
+              style="padding: 10px 16px"
+            >
+              <i class="fa-solid fa-arrow-right-to-bracket me-2"></i>REGISTER NOW
+            </button>
+          </div>
         </div>
-        <div class="navbar-nav justify-content-center align-items-center flex-grow">
-          <a class="nav-link" href="#"
-          ><button
-            type="button"
-            class="button-primary"
-            style="padding: 10px 55px"
-          >
-            <i class="fa-solid fa-user me-2"></i>MY ACCOUNT
-          </button></a
-        >
-        </div>
-      </div>
-    </div>
-    <div class="hero-area row d-flex justify-content-center align-items-center vh-100" style="overflow-x: hidden">
-      <div class="col-6 d-none d-md-block ps-5">
-        <div
-          class="ps-5 d-flex flex-column align-items-start justify-content-center"
-        >
-          <span style="font-size: 32px; font-weight: 500"
-            ><span style="color: #4154f1; font-weight: 700">Making </span>File
-            Sharing Easy & Reliable</span
-          >
-          <span class="mt-3" style="font-size: 18px; font-weight: 400"
-            >Easy to use, reliable, private, and secure. It’s no wonder
-            <span style="color: #4154f1; font-weight: 600">hamrofiles</span> is
-            the choice for sharing your most important files quickly and
-            reliably.</span
-          >
-          <button
-            type="button"
-            class="button-primary mt-4"
-            style="padding: 10px 16px"
-          >
-            <i class="fa-solid fa-arrow-right-to-bracket me-2"></i>REGISTER NOW
-          </button>
-        </div>
-      </div>

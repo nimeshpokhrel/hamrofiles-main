@@ -132,3 +132,7 @@ body {
 .offcanvas-start {
   width: 300px !important;
 }
+
+.overflow-wrapper {
+  overflow-x: hidden !important;
+}
