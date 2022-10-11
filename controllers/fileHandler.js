@@ -29,9 +29,9 @@ const handleFileShare = async (request, response) => {
 const handleFreeDownloadGet = async (request, response) => {
   try {
     const file = await File.findById(request.params.id);
-    const length = 40;
+    const length = 35;
     var smallerString = file.originalName.substring(0, length);
-    if (file.originalName.length > 40) {
+    if (file.originalName.length > 35) {
       smallerString = smallerString + "....";
     }
     response.render("freeDownload", {
@@ -62,9 +62,9 @@ const handleFreeDownloadPost = async (request, response) => {
 const handleEncryptedDownloadGet = async (request, response) => {
   try {
     const file = await File.findById(request.params.id);
-    const length = 40;
+    const length = 35;
     var smallerString = file.originalName.substring(0, length);
-    if (file.originalName.length > 40) {
+    if (file.originalName.length > 35) {
       smallerString = smallerString + "....";
     }
     response.render("encryptedDownload", {
@@ -80,9 +80,9 @@ const handleEncryptedDownloadGet = async (request, response) => {
 const handleEncryptedDownloadPost = async (request, response) => {
   try {
     const file = await File.findById(request.params.id);
-    const length = 40;
+    const length = 35;
     var smallerString = file.originalName.substring(0, length);
-    if (file.originalName.length > 40) {
+    if (file.originalName.length > 35) {
       smallerString = smallerString + "....";
     }
     if (!(await bcrypt.compare(request.body.password, file.password))) {

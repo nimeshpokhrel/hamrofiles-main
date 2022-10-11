@@ -9,9 +9,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
   $("#file-upload").change(function () {
-    var length = 40;
+    var length = 35;
     var smallerString = this.files[0].name.substring(0, length);
-    if (this.files[0].name.length > 40) {
+    if (this.files[0].name.length > 35) {
       smallerString = smallerString + "....";
     }
     $("#file-name").text(smallerString);
