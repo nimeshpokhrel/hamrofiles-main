@@ -8,6 +8,7 @@ const { homeRoutes } = require("./routes/home")
 const app = express()
 
 app.use(express.urlencoded( {extended: true} ))
+
 mongoose.connect(process.env.DATABASE_URL, () => {
     console.log("Connected to DB!")
 })
@@ -19,5 +20,5 @@ app.use(homeRoutes)
 app.set("view engine", "ejs")
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server running on http://localhost:3000`)
+    console.log(`Server running !!`)
 })

@@ -17,7 +17,7 @@
 .selected-file-wrapper {
   height: 60px;
   border-radius: 5px;
-  background-color: hsla(234, 86%, 60%, 0.098);
+  background-color: #4153f119;
 }
 
 .button-primary {
@@ -39,10 +39,10 @@
 .password-input {
   border: none;
   outline: none;
-  background-color: rgb(246, 246, 246);
+  background-color: #f2f5fc;
   padding: 8px 14px;
   border-radius: 5px;
-  outline: 1.5px solid #353535;
+  outline: 1.5px solid #4153f1dc;
   font-size: 14px;
 }
 
@@ -68,7 +68,7 @@
   outline: none;
 }
 
-body {
+.hero-area {
   margin: 0;
   background-size: cover;
   background: url(/img/hero-bg.png) top center no-repeat;
@@ -120,3 +120,6 @@ input::placeholder {
   display: none;
 }
 
+body {
+  background-color: #f9fafe !important;
+}
